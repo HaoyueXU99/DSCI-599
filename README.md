@@ -28,7 +28,7 @@ Topics:
     - Analysis of Customer Conversion, Purchases.  
     - Clustering / Differentiating consumers. 
 
-Go to: [HW2](week5/HW3.ipynb)
+Go to: [HW3](week5/HW3.ipynb)
 
 ## Week 6 - NBA Player Data 
 Topics:  
@@ -37,4 +37,4 @@ Topics:
 - Analytics to Evaluate Individual Performance 
 - Analytics to Evaluate Firm Strategies 
 
-Go to: [HW2](week6/HW4.ipynb)
+Go to: [HW4](week6/HW4.ipynb)
