@@ -1,4 +1,4 @@
-# DSCI-599
+# DSCI-599  Data Science for Business, Economics, and Society 
 Applications of data science and machine learning techniques for solving business, economic, and societal problems, including marketing, econometrics, education, public safety, healthcare, and social services.
 
 
