@@ -2,7 +2,7 @@ import streamlit as st
 
 # Initialize session state variables
 if 'openai_api_key' not in st.session_state:
-	st.session_state.openai_api_key = "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"
+	st.session_state.openai_api_key = ""
 
 st.set_page_config(page_title="Home", page_icon="🦜️🔗")
 
