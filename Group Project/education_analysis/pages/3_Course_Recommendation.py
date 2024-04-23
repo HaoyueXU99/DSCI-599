@@ -2,7 +2,7 @@ import streamlit as st
 
 # Initialize session state variables
 if 'openai_api_key' not in st.session_state:
-	st.session_state.openai_api_key = "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"
+	st.session_state.openai_api_key = ""
 
 st.set_page_config(page_title="Course Recommendation", page_icon="🦜️🔗")
 
