@@ -1,35 +1,64 @@
-import os, streamlit as st
-from openai import OpenAI
-import pandas as pd
+import streamlit as st
+
+# Initialize session state variables
+if 'openai_api_key' not in st.session_state:
+	st.session_state.openai_api_key = "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"
+
+st.set_page_config(page_title="Course Recommendation", page_icon="🦜️🔗")
+
+# st.header("Welcome to LangChain! 👋")
+
+st.markdown(
+    """
+
+    ## Course Recommendation System for Coursera
+
+    > Leveraging Cluster Analysis and SHAP for Enhanced Online Learning
 
 
-file_path = "dataset/coursera_course_2024.csv"
-df_2024 = pd.read_csv(file_path)
-json_data = df_2024.to_json(orient='records', lines=True)
 
-# Set API keys from session state
-openai_api_key = st.session_state.openai_api_key
+    ### Course Recommendation System - Concept
 
-# Streamlit app
-st.header('Course Recommendation')
+    #### Goal
+    Improve user experience through personalized course suggestions.
+
+    #### Features
+    Inputs for skills, course format, and difficulty.
+    Personalized recommendations based on user preferences and data-driven insights.
+
+    #### Data Preparation
+    Use of "coursera_course_2024.csv" with comprehensive course details.
+
+    #### Keyword Matching
+    Employing GPT-3.5-turbo for effective input analysis.
+
+    #### Course Filtering
+    Dynamic query generation for tailored recommendations.
+
+    #### User Interface
+    Streamlit-based, easy-to-navigate application design.
 
 
 
-if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "Please tell me what kind of courses you would like to study. Let me know, and I will make recommendations for you."}]
+    ---
 
-for msg in st.session_state.messages:
-    st.chat_message(msg["role"]).write(msg["content"])
 
-if prompt := st.chat_input():
-    if not openai_api_key:
-        st.info("Please add your OpenAI API key to continue.")
-        st.stop()
 
-    client = OpenAI(api_key=openai_api_key)
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    st.chat_message("user").write(prompt)
-    response = client.chat.completions.create(model="gpt-3.5-turbo", messages=st.session_state.messages)
-    msg = response.choices[0].message.content
-    st.session_state.messages.append({"role": "assistant", "content": msg})
-    st.chat_message("assistant").write(msg)
+    ### Challenges, Solutions and Future Enhancements
+
+    #### Challenges
+    - Complex keyword and metadata matching.
+    - Balancing relevance and diversity in course recommendations.
+
+    #### Solutions
+    - Utilized NLP for improved keyword extraction and semantic matching.
+    - Adjusted algorithm parameters to blend popular and niche offerings.
+
+    #### Future Enhancements
+    - **Data Needs**: More comprehensive user preference data to enable collaborative filtering.
+    - **Recommendation Improvements**: Prioritize content aligned with detected trends for future recommendations.
+    - **Objective**: Optimize user experience and expand user base.
+
+
+    """
+)

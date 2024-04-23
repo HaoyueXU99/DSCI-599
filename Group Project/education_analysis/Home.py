@@ -6,33 +6,27 @@ if 'openai_api_key' not in st.session_state:
 
 st.set_page_config(page_title="Home", page_icon="🦜️🔗")
 
-st.header("Welcome to LangChain! 👋")
+# st.header("Welcome to LangChain! 👋")
 
 st.markdown(
     """
-    [LangChain](https://langchain.readthedocs.io/en/latest) is an open-source framework created to aid the development of applications leveraging the power of large language models (LLMs). It can be used for chatbots, text summarisation, data generation, code understanding, question answering, evaluation, and more 🔥!
+    # DSCI 599 - Trends in Online Courses: A Data-Driven Analysis
 
-    **👈 Provide the API keys in Settings, and select a use case from the sidebar to get started.**
 
-    ##### Web Search
-    * A sample app for web search queries using LangChain and Serper API.
-    * References: Blog | [Source Code](https://github.com/alphasecio/langchain-examples/blob/main/search) | [Python Notebook](https://github.com/alphasecio/langchain-examples/blob/main/search/langchain_search.ipynb)
-    * *Note: The all-in-one search app has been modified to use Serper API instead of SerpApi.*
+    ## Introduction
 
-    ##### URL Summary
-    * A sample app for summarizing URL content using LangChain and OpenAI.
-    * References: [Blog](https://alphasec.io/blinkist-for-urls-with-langchain-and-openai) | [Source Code](https://github.com/alphasecio/langchain-examples/blob/main/url-summary)
+    - To identify and analyze evolving trends in the design of courses and how these influence learner engagement on Coursera over the period from 2021 to 2024. The study aims to help educators and platforms optimize content to meet changing learner needs effectively.
+    - Approach: Employing advanced machine learning techniques including Clustering Analysis and SHAP Analysis to analyze and predict key elements of successful course design.
+    - Application:a personalized course recommendation system using Python and Streamlit.
+	
+    
+    """
+)
 
-    ##### Text Summary
-    * A sample app for summarizing text using LangChain and OpenAI.
-    * References: [Blog](https://alphasec.io/summarize-text-with-langchain-and-openai) | [Source Code](https://github.com/alphasecio/langchain-examples/blob/main/text-summary) | [Python Notebook](https://github.com/alphasecio/langchain-examples/blob/main/text-summary/langchain_text_summarizer.ipynb)
 
-    ##### Document Summary
-    * A sample app for summarizing documents using LangChain and Chroma.
-    * References: [Blog](https://alphasec.io/summarize-documents-with-langchain-and-chroma) | [Source Code](https://github.com/alphasecio/langchain-examples/blob/main/chroma-summary) | [Python Notebook](https://github.com/alphasecio/langchain-examples/blob/main/chroma-summary/langchain_doc_summarizer.ipynb)
-
-    ##### News Summary
-    * A sample app for Google news search and summaries using LangChain and Serper API.
-    * References: [Blog](https://alphasec.io/summarize-google-news-results-with-langchain-and-serper-api) | [Source Code](https://github.com/alphasecio/langchain-examples/blob/main/news-summary)
+st.markdown(
+    """
+    ## Team Member
+	Yuheng Chen, Haoyue Xu, Jingyue Zhang
     """
 )

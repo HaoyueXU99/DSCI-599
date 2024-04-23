@@ -10,7 +10,7 @@ st.caption("*Required for all apps; get it [here](https://platform.openai.com/ac
 
 # If the 'Save' button is clicked
 if st.button("Save"):
-    if not openai_api_key.strip() or not serper_api_key.strip():
+    if not openai_api_key.strip():
         st.error("Please provide the missing API keys.")
     else:
         st.session_state.openai_api_key = openai_api_key
