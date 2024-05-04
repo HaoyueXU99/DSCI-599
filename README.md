@@ -1,14 +1,13 @@
-# DSCI-599  Data Science for Business, Economics, and Society 
+# DSCI-599  Data Science for Business, Economics, and Society
 
 Applications of data science and machine learning techniques for solving business, economic, and societal problems, including marketing, econometrics, education, public safety, healthcare, and social services.
-
 
 ## Week 3 - Air BnB DataSets
 
 Topics:  
 
 - Business problems and data science solutions  
-  - Industry background: Data Science, Real Estate and The Hotel Industry. 
+  - Industry background: Data Science, Real Estate and The Hotel Industry.
   - Context and Focus: Using machine learning and regression analysis for housing data.  
 
 Go to: [HW1](week3/HW1.ipynb)
@@ -27,20 +26,20 @@ Go to: [HW2](week4/HW2.ipynb)
 
 Topics:  
 
-- Understand Structure and Background of the Consumer Sales Industry 
+- Understand Structure and Background of the Consumer Sales Industry
   - Analysis of Customer Conversion, Purchases.  
-    - Clustering / Differentiating consumers. 
+    - Clustering / Differentiating consumers.
 
 Go to: [HW3](week5/HW3.ipynb)
 
-## Week 6 - NBA Player Data 
+## Week 6 - NBA Player Data
 
 Topics:  
 
-- Use of Analytics in the Sports Industry (Sports Analytics Cases) 
+- Use of Analytics in the Sports Industry (Sports Analytics Cases)
 - Examples of When Data is Effective vs. When Business Knowledge and Context Should be used.  
-- Analytics to Evaluate Individual Performance 
-- Analytics to Evaluate Firm Strategies 
+- Analytics to Evaluate Individual Performance
+- Analytics to Evaluate Firm Strategies
 
 Go to: [HW4](week6/HW4.ipynb)
 
@@ -53,7 +52,11 @@ This project aims to identify and analyze evolving trends in the design of cours
 ### Methodology
 
 1. Clustering Analysis: Utilizing TF-IDF vectorization, Truncated SVD, and KMeans clustering to identify patterns in course skills and their evolution over time.
+@Jingyue Zhang
 2. SHAP Analysis: Employing the CatBoostRegressor model to predict course ratings and interpret the impact of various features using SHAP (SHapley Additive exPlanations) values.
+@Yuheng Chen
+
+Go to: [models](Group_project/model)
 
 ### Key Findings
 
@@ -62,6 +65,7 @@ This project aims to identify and analyze evolving trends in the design of cours
 - Importance of course duration, type, and difficulty in influencing learner preferences.
 
 ### Application
-Go to: [Group Project](Group_project/education_analysis)
-Developed a personalized course recommendation system using Python and Streamlit, leveraging insights from Cluster Analysis and SHAP Analysis to provide tailored suggestions based on user preferences and data-driven trends.
 
+Developed a personalized course recommendation system using Python and Streamlit, leveraging insights from Cluster Analysis and SHAP Analysis to provide tailored suggestions based on user preferences and data-driven trends. [@Haoyue Xu](https://github.com/HaoyueXU99)
+
+Go to: [education_analysis](Group_project/education_analysis)
