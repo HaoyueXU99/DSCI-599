@@ -43,7 +43,7 @@ Topics:
 
 Go to: [HW4](week6/HW4.ipynb)
 
-## Group Project: Trends in Online Courses: A Data-Driven Analysis of Coursera
+## Group Project - Trends in Online Courses: A Data-Driven Analysis of Coursera
 
 ### Objective
 
